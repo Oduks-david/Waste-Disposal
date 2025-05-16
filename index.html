@@ -438,13 +438,13 @@
                     localStorage.setItem('users', JSON.stringify([
                         {
                             name: "Admin User",
-                            matricNo: "FSC/2020/0001",
+                            matricNo: "CSC/2020/0001",
                             password: "admin123",
                             role: "admin"
                         },
                         {
                             name: "Demo Student",
-                            matricNo: "FSC/2020/0002",
+                            matricNo: "CSC/2020/0002",
                             password: "student123",
                             role: "student"
                         }
@@ -537,7 +537,7 @@
                 
                 showMessage('Login successful! Redirecting...', true);
                 setTimeout(() => {
-                    window.location.href = user.role === 'admin' ? 'admin-dashboard.html' : 'index.html';
+                    window.location.href = user.role === 'admin' ? 'admin-dashboard.html' : 'main.html';
                 }, 1500);
             }
 
@@ -553,7 +553,7 @@
                         <div id="reset-message-container"></div>
                         <div class="input-group">
                             <i class="fas fa-id-card"></i>
-                            <input type="text" id="reset-matric" placeholder="FSC/2020/0001">
+                            <input type="text" id="reset-matric" placeholder="CSC/2020/0001">
                         </div>
                         <button class="auth-btn reset-btn">Send Reset Link</button>
                     </div>
@@ -617,7 +617,7 @@
                             </div>
                             <div class="input-group">
                                 <i class="fas fa-id-card"></i>
-                                <input type="text" id="signup-matric" placeholder="Matric Number (FSC/2020/001)" required>
+                                <input type="text" id="signup-matric" placeholder="Matric Number (CSC/2020/001)" required>
                             </div>
                             <div class="input-group">
                                 <i class="fas fa-lock"></i>

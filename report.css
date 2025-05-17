@@ -704,7 +704,7 @@ footer {
     
     /* Eco section as block on smaller screens */
     .eco-section {
-        display: flexk;
+        display: flex;
         flex-direction: column-reverse;
     }
     
